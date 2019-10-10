@@ -1,5 +1,4 @@
 module ApplicationHelper
-  module ApplicationHelper
   def hogwarts_houses
     [
       ['Gryffindor', 'Gryffindor'],
@@ -8,5 +7,4 @@ module ApplicationHelper
       ['Hufflepuff', 'Hufflepuff'],
     ]
   end
-end
 end
