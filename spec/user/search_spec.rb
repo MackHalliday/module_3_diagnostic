@@ -17,16 +17,15 @@ require 'rails_helper'
 
 describe 'search functionality' do
   it 'can search for a member filtered by house' do
-    user_1 = create(:user)
 
-    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user_1)
+    visit "/"
 
     click_on 'Griffindor'
     click_on 'Search For Members'
 
     expect(current_path).to eq("/search")
 
-    within "#member-1" do 
+    within "#member-1" do
       expect(page).to have_content("Name")
       expect(page).to have_content("Role")
       expect(page).to have_content("House")

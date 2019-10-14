@@ -16,15 +16,37 @@ gem 'figaro'
 gem 'jquery'
 
 group :development, :test do
+  gem 'awesome_print'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'foundation-rails'
+  gem 'launchy'
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'vcr'
+  gem 'webdrivers'
+  gem 'webmock'
 end
 
 group :test do
-  gem 'rspec-rails'
+  gem 'awesome_print'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara'
+  gem 'database_cleaner'
+  gem 'foundation-rails'
+  gem 'launchy'
+  gem 'pry'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
+  gem 'shoulda-matchers'
+  gem 'simplecov'
+  gem 'vcr'
+  gem 'webdrivers'
+  gem 'webmock'
 end
 
 group :development do
