@@ -1,1 +1,8 @@
-<p> <%= @house %> </p>
+
+<h1> Members </h1>
+<% @facade.members.each do |member| %>
+  <p> Name: <%= member.name %> </p>
+  <p> Role: <%= member.role %> </p>
+  <p> House: <%= member.house %> </p>
+  <br>
+<% end %>
